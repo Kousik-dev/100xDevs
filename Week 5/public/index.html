@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.6/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          async function sendRequest(){
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            console.log(a + b);
+            const response = axios.post("http://localhost:3000/sum",{
+                a: a,
+                b: b
+            })
+
+            console.log(response.data);
+
+
+          }
+    </script>
+    <input type = "text" id = "a">
+    <input type = "text" id = "b">
+    <button onclick = "sendRequest()">Calculate</button>
+</body>
+</html>

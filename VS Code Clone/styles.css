@@ -1,0 +1,330 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 70px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #0078d4;
+}
+
+#download {
+    margin-left: 5px;
+    padding: 5.5px 16px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5%;
+    background-color: #0078d4;
+}
+
+.navLink {
+    padding-left: 20px;
+    color: #9ba3b4;
+    font-size: 16px;
+}
+
+header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e9eaeb;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.flex img {
+    margin: 0;
+}
+
+.menubars {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.verticalCenter img {
+    height: 20px;
+    padding: 10px;
+    width: auto;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:
+        #9ba3b4;
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+p {
+    margin: 0;
+}
+
+.body2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:50px;
+}
+
+.body2 img {
+    height: 100%;
+    width: 95%;
+}
+
+.os {
+    margin-right: 150px;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #0078d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#micro {
+    color: grey;
+    font-size: 10px;
+}
+
+#micro span {
+    color: #0078d4;
+    text-decoration: underline;
+}
+
+.body3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 70px;
+
+}
+
+.body3 p {
+    color:
+        #9ba3b4;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex img {
+    padding-right: 10px;
+}
+
+.languagePanel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.languagePanel img {
+    height: 20px;
+    width: auto;
+}
+
+.body4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 70px;
+}
+
+.codings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.codings img {
+    height: 20px;
+    width: auto;
+}
+
+.prog {
+    display: flex;
+    align-items: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.prog img {
+    height: 40px;
+    width: auto;
+}
+
+.prog h4 {
+    margin: 0;
+    font-size: smaller;
+
+}
+
+.prog p {
+    margin: 0;
+    color:
+        #9ba3b4;
+    font-size: smaller;
+    padding-top: 5px;
+    /* Optional padding between the h4 and p */
+}
+
+.body5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*max-width: 500px; /* Adjust the width as needed */
+}
+
+.body5 p {
+    max-width: 500px;
+    line-height: 1.5;
+    color:
+        #9ba3b4;
+    font-size: small;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.body6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+
+}
+
+.box:hover {
+    box-shadow: 0 0 0 0.5px #9ba3b4;
+
+
+}
+
+.body6 h5 {
+
+    margin: 0;
+    padding-top: 15px;
+
+}
+
+.body6 .box {
+    /* Add 'solid' to define the border style */
+
+    border-radius: 4px;
+    padding: 20px 40px;
+    background-color: #ffffff12;
+    text-align: left;
+    /* Optional: Add padding for better spacing inside the box */
+}
+
+.box p {
+    padding-top: 10px;
+    color:
+        #9ba3b4;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    background-color: rgba(255, 255, 255, 0.07);
+    height: auto;
+    width: 60px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.box-img img {
+    height: 50px;
+    width: 20px;
+
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom img {
+    height: 15px;
+    width: auto;
+    padding-left: 10px;
+}
+
+.bottom-left p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.bottom-left {
+    line-height: 2;
+    font-size: smaller;
+    color:
+        #9ba3b4;
+
+}
+
+.table1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+
+}
+
+.table1 p {
+    margin: 0;
+    font-size: smaller;
+    color:
+        #9ba3b4;
+    line-height: 1.5;
+    font-weight: 700;
+    max-width: 300px;
+
+
+}
+
+.table1 u p {
+    margin: 0;
+    color: #0078d4;
+}
+
+.table1 p u {
+    margin: 0;
+    color: #0078d4;
+}
+
+.table1 img {
+    height: 100%;
+    width: 95%;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex h-screen w-screen items-center justify-center bg-green-300 p-8">
+
+  <!-- Sign In Page -->
+  <div id="sign-in" class="h-[500px] w-[500px] rounded-lg bg-white p-8 shadow-md">
+    <p class="mb-6 text-center text-4xl font-bold">Sign In Page</p>
+    <div>
+      <input id="signin-username" type="text" placeholder="username"
+        class="mb-6 w-full rounded-md border border-gray-500 p-3 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      <input id="signin-password" type="password" placeholder="password"
+        class="mb-10 w-full rounded-md border border-gray-500 p-3 focus:outline-none focus:ring-2 focus:ring-green-500" />
+      <button class="flex w-full justify-center rounded-md bg-green-300 p-3 text-white hover:bg-green-500 mb-4"
+        onclick="signInUser()">Signin</button>
+      <p class="text-black mt-10 text-left">Don't have an account? <a class="text-blue-500" href="#"
+          onclick="signUp()">Register</a></p>
+    </div>
+  </div>
+
+  <!-- Sign Up Page -->
+  <div id="signup" class="h-[500px] w-[500px] rounded-lg bg-white p-8 shadow-md" style="display: none;">
+    <p class="mb-6 text-center text-4xl font-bold">Sign Up Page</p>
+    <div>
+      <input id="signup-username" type="text" placeholder="username"
+        class="mb-6 w-full rounded-md border border-gray-500 p-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+      <input id="signup-password" type="password" placeholder="password"
+        class="mb-10 w-full rounded-md border border-gray-500 p-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+      <button class="flex w-full justify-center rounded-md bg-green-300 p-3 text-white hover:bg-green-500 mb-4"
+        onclick="signUpUser()">Signup</button>
+      <p class="text-black mt-10 text-left">Already have an account? <a class="text-blue-500" href="#"
+          onclick="signIn()">Login</a></p>
+    </div>
+  </div>
+  <div id="todo-container" class="mt-28 flex flex-col h-screen w-[500px] rounded-lg bg-white p-8 shadow-md overflow-y-auto">
+    <div class="flex justify-between items-center mb-6">
+      <p class="text-center text-4xl font-bold">Todo List</p>
+      <button class="flex justify-center rounded-md bg-blue-500 p-3 text-white hover:bg-blue-700" onclick="logout()">Logout</button>
+    </div>
+    
+    <input id="todo-input" type="text" placeholder="Add a new todo"
+      class="mb-6 w-full rounded-md border border-gray-500 p-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+    <button class="flex w-full justify-center rounded-md bg-green-300 p-3 text-white hover:bg-green-500 mb-4"
+      onclick="addTodo()">Add Todo</button>
+    
+    <!-- Todo list section where todos will be appended -->
+    <div id="todo-list" class="mt-4">
+      <!-- Todos will be dynamically appended here -->
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>

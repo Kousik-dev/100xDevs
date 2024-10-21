@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+</head>
+<body>
+    <div id="content">
+        <center>TO-DO-DOM MANIPULATIONS</center>
+        <form onsubmit="createTodo(); return false;">
+            <label>Enter the Tasks: </label>
+            <input type="text" id="taskInput">
+            <button type="submit">Create</button>
+        </form>
+    </div>
+    <div id="todolist"></div>
+    <script>
+        let todos = [];
+        
+        function createTodo() {
+            const task = document.getElementById("taskInput").value;
+            if (task) {
+                todos.push({ title: task });
+               
+                document.getElementById("taskInput").value = ''; // Clear input after adding
+            }
+            render();
+        }
+
+        function createTodoComponents(todo, index) {
+            const div = document.createElement("div");
+            const h1 = document.createElement("h1");
+            const button = document.createElement("button");
+            button.textContent = "Delete";
+            h1.textContent = todo.title;
+
+            button.onclick = function() {
+                deleteTodo(index);
+            };
+
+            div.append(h1);
+            div.append(button);
+
+            return div;
+        }
+
+        function deleteTodo(index) {
+            todos.splice(index, 1); // Remove the task at the given index
+            render(); // Re-render the list
+        }
+
+        function render() {
+            const todolist = document.getElementById("todolist");
+            todolist.innerHTML = ''; // Clear the list before re-rendering
+            for (let i = 0; i < todos.length; i++) {
+                const element = createTodoComponents(todos[i], i);
+                todolist.appendChild(element);
+            }
+        }
+    </script>
+</body>
+</html>
